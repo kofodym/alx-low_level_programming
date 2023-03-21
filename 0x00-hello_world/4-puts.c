@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 /**
- * This uses puts instead of printf
- * and displays on a new line
  * main - This is the main function
  *
  * Return: Always 0 (Success)
