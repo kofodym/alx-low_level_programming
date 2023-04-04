@@ -3,7 +3,7 @@
 /**
  * print_diagsums - a function that prints the sum of the two diagonals of a square matrix
  * @a: the array
- * @square_matrix:The matrix size
+ * @square_matrix: input
  * Return: Always 0 (Success)
  */
 void print_diagsums(int *a, int square_matrix)
@@ -15,14 +15,12 @@ void print_diagsums(int *a, int square_matrix)
 
 	for (i = 0; i < square_matrix; i++)
 	{
-		sum1 = sum1 + a[i];
+		sum1 = sum1 + a[i * square_matrix + i];
 	}
-	a -= square_matrix;
 
-	for (i = 0; i < square_matrix; i--)
+	for (i = square_matrix - 1; i >= 0; i--)
 	{
-		sum2 += a[i];
-		a -= square_matrix;
+		sum2 += a[i * square_matrix + (square_matrix - i - 1)];
 	}
 
 	printf("%d, %d\n", sum1, sum2);
