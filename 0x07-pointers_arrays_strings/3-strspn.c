@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _strspn -calculates the length (in bytes) of the initial segment of s which consists entirely of bytes in accept
- * @s: initial segment
- * @accept collects byte
+ * _strspn -calculates the length (in bytes) of the substring
+ * @s: initial segment string
+ * @accept: collects byes
  * Return: Always 0
  */
 unsigned int _strspn(char *s, char *accept)
