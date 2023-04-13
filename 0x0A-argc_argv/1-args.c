@@ -13,7 +13,9 @@ int main(int argc, char *argv[])
 {
 	/*Gets rid of the unused parameter error*/
 	(void)argv;
-	printf("%d\n", argc);
+
+	/* argc-1 excludes the name of the program itself*/
+	printf("%d\n", argc -  1);
 
 	return (0);
 }
