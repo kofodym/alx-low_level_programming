@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	
+
 	if (argc_value >= 0)
 	{
 		for (i = 0; i < 5 ; i++)
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 				value++;
 				argc_value -= coins[i];
 			}
-		}	
+		}
 	}
 
 	printf("%d\n", value);
