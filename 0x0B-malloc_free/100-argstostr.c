@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 /**
- * argstostr – This func concatenates all the arguments of your program.
- * @ac: arguments 
+ * argstostr - This func concatenates all the arguments of your program.
+ * @ac: arguments
  * @av: arguments vector
  *
  * Return: a pointer to a new string, or NULL if it fails
